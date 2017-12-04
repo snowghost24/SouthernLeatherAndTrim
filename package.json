@@ -1,0 +1,23 @@
+{
+  "name": "southern_leather",
+  "version": "1.0.0",
+  "description": "Southern Leather and trim website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snowghost24/SouthernLeatherAndTrim.git"
+  },
+  "author": "Jose Guzman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snowghost24/SouthernLeatherAndTrim/issues"
+  },
+  "homepage": "https://github.com/snowghost24/SouthernLeatherAndTrim#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "nodemailer": "^4.4.0"
+  }
+}

@@ -1,4 +1,4 @@
-/* GLOBAL STYLES
+  /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
@@ -35,7 +35,6 @@ body {
   height: 32rem;
 }
 
-
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
@@ -51,22 +50,15 @@ body {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
-
-/* Featurettes
-------------------------- */
-
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
-
 /* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -89,3 +81,10 @@ body {
     margin-top: 7rem;
   }
 }
+
+/* #imgsize{
+ 
+   width: 100%;
+    height: auto;
+
+} */
