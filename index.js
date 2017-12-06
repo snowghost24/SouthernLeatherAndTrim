@@ -5,17 +5,17 @@ const bodyParser = require("body-parser");
 const nodemailer = require('nodemailer');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/',function(request,response){
    // response.send('this is a string')
    response.sendFile(__dirname +'/index.html')
 });
-/*
+
 app.post('/getquote', function(req,res){
-console.log("ajax worked");
+console.log(req.body);
  // Generate test SMTP service account from ethereal.email
 // Only needed if you don't have a real mail account for testing
-         //  console.log(req.body.responseData[0]);
-         //  console.log(req.body.responseData[1]);
+   
        let transporter = nodemailer.createTransport({
        host: "smtp.gmail.com",
       port: 465,
@@ -38,10 +38,20 @@ console.log("ajax worked");
    //user email
    to: 'jjguzman24680@gmail.com', 
    //subject line
-   subject: req.body.responseData[0],
+   subject: "Vehicle Quote Request",
    //text and html
-   text: req.body.responseData[0], 
-   html: '<b>'+req.body.responseData[1]+'</b>' 
+   text: "This is a quote request from souther leather and trim website.", 
+   html: '<div id="content">'+
+   '<h1>Southern Leather & Trim</h1>'+
+   '<div>'+
+   '<p><b>name:</b>'+req.body.name+'</p>'+
+   '<p><b>email:</b>'+req.body.email+'</p>'+
+   '<p><b>Tel:</b>'+req.body.tel+'</p>'+
+   '<p><b>Year:</b>'+req.body.year+'</p>'+
+   '<p><b>make:</b>'+req.body.make+'</p>'+
+   '<p><b>model:</b>'+req.body.model+'</p>'+
+   '</div>'+
+   '</div>' 
    };
    //function to send email
    transporter.sendMail(mailOptions, (error, info) => {
@@ -50,8 +60,11 @@ console.log("ajax worked");
    }
    console.log('Message sent: %s', info.messageId);
    })
- })
 
- */
+   
+ })
+// end of post
+
+ 
 app.listen(3001);
 
