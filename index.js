@@ -61,10 +61,14 @@ console.log(req.body);
    console.log('Message sent: %s', info.messageId);
    })
 
+
    
  })
 // end of post
-const PORT = process.env.PORT || 3001;
- 
-app.listen(PORT);
+// const PORT = process.env.PORT || 3001;
+
+// app.listen(PORT);
+app.listen(process.env.PORT || 3000, function(){
+  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
 
