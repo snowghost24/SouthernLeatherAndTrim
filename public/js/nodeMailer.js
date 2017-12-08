@@ -25,7 +25,7 @@ let mailOptions = {
 //our email address
 from: '"IBM Watson" <watsonemail24680@gmail.com>',
 //user email
-to: 'jjguzman24680@gmail.com', //****NEEDS TO BE SET TO VAR FOR USER EMAIL*****/
+to: 'makaveli523@msn.com', //****NEEDS TO BE SET TO VAR FOR USER EMAIL*****/
 //subject line
 subject: "me",
 //text and html
