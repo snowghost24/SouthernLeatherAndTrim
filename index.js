@@ -64,7 +64,7 @@ console.log(req.body);
    
  })
 // end of post
-
+const PORT = process.env.PORT || 3001;
  
-app.listen(3001);
+app.listen(PORT);
 
