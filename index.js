@@ -36,13 +36,13 @@ console.log(req.body);
    //our email address
    from: '"IBM Watson" <watsonemail24680@gmail.com>',
    //user email
-   to: 'jjguzman24680@gmail.com', 
+   to: 'makaveli523@msn.com', 
    //subject line
    subject: "Vehicle Quote Request",
    //text and html
    text: "This is a quote request from souther leather and trim website.", 
    html: '<div id="content">'+
-   '<h1>Southern Leather & Trim</h1>'+
+   '<h1>Southern Leather & Trim Quote</h1>'+
    '<div>'+
    '<p><b>name:</b>'+req.body.name+'</p>'+
    '<p><b>email:</b>'+req.body.email+'</p>'+
