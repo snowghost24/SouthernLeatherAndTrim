@@ -75,6 +75,8 @@ body {
   .featurette-heading {
     font-size: 50px;
   }
+
+
 }
 
 @media (min-width: 62em) {
@@ -83,6 +85,10 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  /* body {
+width: min-content;  } */
+}
 
 
 /* #imgsize{
@@ -102,7 +108,7 @@ body {
 
 .nav-item  a {
   color:white;
-  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
   font-size: 20px;
 }
 
@@ -143,3 +149,12 @@ background-color: white;
 .seat-options2 > img{
   padding: 3px;
 }
+
+body {
+  background-color: #f6f6f6;
+}
+
+#map {
+  height: 400px;
+  width: auto;
+max-width: 600px}
