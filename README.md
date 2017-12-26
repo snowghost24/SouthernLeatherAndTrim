@@ -1,2 +1,2 @@
 This is a business website that provides vehicle installation service. 
-Currently under construction
+![alt text](https://raw.githubusercontent.com/snowghost24/SouthernLeatherAndTrim/master/public/assets/images/readmeimg.png)
